@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: 'Ramen Sauce', cursive;
+  
+  /* Overriding Slate with Pale Ivory (#F3F0E7) and Charcoal (#2A2529) */
+  --color-slate-50: #F3F0E7;
+  --color-slate-100: #EAE6DB;
+  --color-slate-200: #DFDACF;
+  --color-slate-300: #CFC9BC;
+  --color-slate-400: #B5AFA1;
+  --color-slate-500: #938D81;
+  --color-slate-600: #716C62;
+  --color-slate-700: #514D46;
+  --color-slate-800: #383431; 
+  --color-slate-900: #2A2529;
+  --color-slate-950: #1D1A1D;
+
+  /* Overriding Blue with a Sage Green palette to complement the theme */
+  --color-blue-50: #F2F5F3;
+  --color-blue-100: #E1EAE4;
+  --color-blue-200: #C4D5CB;
+  --color-blue-300: #9DBAA9;
+  --color-blue-400: #749C85;
+  --color-blue-500: #528066;
+  --color-blue-600: #3E6550;
+  --color-blue-700: #335141;
+  --color-blue-800: #2A4135;
+  --color-blue-900: #23362C;
+  --color-blue-950: #121E18;
+}
+
+@font-face {
+  font-family: 'Ramen Sauce';
+  src: local('Ramen Sauce'), local('RamenSauce');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #F3F0E7;
+  --foreground: #2A2529;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2A2529;
+    --foreground: #F3F0E7;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Theme Transition */
+body {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Disable transitions when View Transition is active */
+::view-transition {
+  pointer-events: none;
+}
+
+/* Ripple View Transition Fixes */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 999;
+}
+
+/* 3D Utility Classes for Flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1.5rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}

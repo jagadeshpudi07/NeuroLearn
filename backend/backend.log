@@ -1,0 +1,106 @@
+[2026-05-13T06:20:15.448Z] GET /
+[2026-05-13T06:26:37.901Z] GET /
+[2026-05-13T06:26:43.939Z] POST /api/notes/upload
+PDF Error: TypeError: Cannot read properties of undefined (reading 'verbosity')
+    at new exports.PDFParse (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:470673)
+    at exports.uploadNote (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\controllers\notesController.js:12:20)
+    at Layer.handleRequest (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:69:7)
+    at indicateDone (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:73:68)
+    at C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:232:11
+    at WriteStream.<anonymous> (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\storage\disk.js:42:9)
+    at WriteStream.emit (node:events:530:35)
+    at finish (node:internal/streams/writable:955:10)
+[2026-05-13T06:27:25.004Z] POST /api/notes/upload
+PDF Error: TypeError: Cannot read properties of undefined (reading 'verbosity')
+    at new exports.PDFParse (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:470673)
+    at exports.uploadNote (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\controllers\notesController.js:12:20)
+    at Layer.handleRequest (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:69:7)
+    at indicateDone (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:73:68)
+    at C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:232:11
+    at WriteStream.<anonymous> (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\storage\disk.js:42:9)
+    at WriteStream.emit (node:events:530:35)
+    at finish (node:internal/streams/writable:955:10)
+[2026-05-13T06:29:29.179Z] POST /api/notes/upload
+PDF Error: TypeError: Cannot read properties of undefined (reading 'verbosity')
+    at new exports.PDFParse (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:470673)
+    at exports.uploadNote (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\controllers\notesController.js:12:20)
+    at Layer.handleRequest (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:69:7)
+    at indicateDone (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:73:68)
+    at C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\lib\make-middleware.js:232:11
+    at WriteStream.<anonymous> (C:\Users\user\Downloads\PROJECTS\NeuroLearn\backend\node_modules\multer\storage\disk.js:42:9)
+    at WriteStream.emit (node:events:530:35)
+    at finish (node:internal/streams/writable:955:10)
+[2026-05-13T06:30:41.583Z] GET /
+[2026-05-13T06:31:12.598Z] POST /api/notes/upload
+[2026-05-13T06:31:14.910Z] POST /api/ai/generate-summary
+[2026-05-13T06:33:52.697Z] POST /api/ai/generate-summary
+[2026-05-13T06:34:32.333Z] POST /api/notes/upload
+[2026-05-13T06:34:34.642Z] POST /api/ai/generate-summary
+[2026-05-13T06:35:41.372Z] POST /api/ai/generate-summary
+[2026-05-13T06:35:45.749Z] POST /api/ai/generate-summary
+[2026-05-13T06:36:33.798Z] POST /api/ai/generate-summary
+[2026-05-13T06:37:05.815Z] POST /api/ai/generate-summary
+[2026-05-13T06:37:52.755Z] POST /api/ai/generate-summary
+[2026-05-13T06:37:52.759Z] POST /api/ai/generate-summary
+[2026-05-13T06:38:10.112Z] POST /api/notes/upload
+[2026-05-13T06:38:12.023Z] POST /api/ai/generate-summary
+[2026-05-13T06:38:31.493Z] POST /api/notes/upload
+[2026-05-13T06:38:33.563Z] POST /api/ai/generate-summary
+[2026-05-13T06:39:42.458Z] POST /api/notes/upload
+[2026-05-13T06:39:44.796Z] POST /api/ai/generate-summary
+[2026-05-13T06:41:52.313Z] POST /api/ai/generate-summary
+[2026-05-13T06:41:59.156Z] POST /api/notes/upload
+[2026-05-13T06:42:01.318Z] POST /api/ai/generate-summary
+[2026-05-13T06:42:21.423Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:49:16.274Z] POST /api/ai/generate-summary
+[2026-05-13T06:49:16.283Z] POST /api/ai/generate-summary
+[2026-05-13T06:49:37.743Z] POST /api/ai/generate-summary
+[2026-05-13T06:50:31.616Z] POST /api/notes/upload
+[2026-05-13T06:50:33.890Z] POST /api/ai/generate-summary
+[2026-05-13T06:50:38.723Z] POST /api/ai/generate-summary
+[2026-05-13T06:50:57.409Z] POST /api/ai/generate-summary
+[2026-05-13T06:51:04.919Z] POST /api/notes/upload
+[2026-05-13T06:51:07.007Z] POST /api/ai/generate-summary
+[2026-05-13T06:51:32.549Z] POST /api/ai/generate-quiz
+[2026-05-13T06:51:48.042Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:51:48.050Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:52:09.230Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:52:36.183Z] POST /api/ai/chat
+[2026-05-13T06:52:50.571Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:52:50.579Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:55:40.503Z] POST /api/ai/generate-flashcards
+[2026-05-13T06:56:51.550Z] POST /api/ai/generate-summary
+[2026-05-13T06:57:01.772Z] POST /api/ai/generate-summary
+[2026-05-13T06:57:01.778Z] POST /api/ai/generate-summary
+[2026-05-13T06:57:14.593Z] POST /api/ai/generate-quiz
+[2026-05-13T06:57:14.599Z] POST /api/ai/generate-quiz
+[2026-05-13T06:58:42.037Z] POST /api/ai/generate-summary
+[2026-05-13T06:58:42.043Z] POST /api/ai/generate-summary
+[2026-05-13T09:22:16.560Z] POST /api/ai/generate-summary
+[2026-05-13T09:22:32.868Z] GET /
+[2026-05-13T09:25:23.771Z] POST /api/notes/upload
+[2026-05-13T09:25:26.827Z] POST /api/ai/generate-summary
+[2026-05-13T09:25:48.954Z] POST /api/ai/generate-quiz
+[2026-05-13T09:25:48.961Z] POST /api/ai/generate-quiz
+[2026-05-13T09:26:53.992Z] POST /api/ai/generate-flashcards
+[2026-05-13T09:26:54.002Z] POST /api/ai/generate-flashcards
+[2026-05-13T09:29:28.397Z] POST /api/ai/generate-quiz
+[2026-05-13T09:34:27.231Z] POST /api/ai/generate-summary
+[2026-05-13T09:34:27.239Z] POST /api/ai/generate-summary
+[2026-05-13T09:35:57.282Z] POST /api/ai/generate-summary
+[2026-05-13T09:35:57.291Z] POST /api/ai/generate-summary
+[2026-05-13T09:36:05.807Z] POST /api/ai/generate-summary
+[2026-05-13T09:36:05.811Z] POST /api/ai/generate-summary
+[2026-05-13T09:38:47.891Z] POST /api/ai/generate-summary
+[2026-05-13T09:38:47.898Z] POST /api/ai/generate-summary
+[2026-05-13T09:42:07.635Z] POST /api/ai/generate-summary
+[2026-05-13T09:42:07.643Z] POST /api/ai/generate-summary
+[2026-05-13T09:42:14.530Z] POST /api/ai/generate-summary
+[2026-05-13T09:42:14.535Z] POST /api/ai/generate-summary
+[2026-05-13T09:47:27.280Z] POST /api/ai/chat
