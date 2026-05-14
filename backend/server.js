@@ -11,7 +11,9 @@ const logToFile = (msg) => {
   console.log(msg);
 };
 
-app.use(cors())
+app.use(cors({
+  origin: "*"
+}))
 app.use(express.json())
 app.use((req, res, next) => {
   logToFile(`${req.method} ${req.url}`);

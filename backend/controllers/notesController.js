@@ -5,6 +5,7 @@ const fs = require('fs');
 const { notes } = require('../utils/db');
 
 exports.uploadNote = async (req, res) => {
+  console.log("UPLOAD API HIT");
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
   
   try {
